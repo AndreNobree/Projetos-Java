@@ -7,7 +7,7 @@ import okhttp3.Response;
 import java.io.IOException;
 
 public class Main {
-    private static final String API_KEY = "1b06da5553773ccaab34a9ae6de794fe";
+    private static final String API_KEY = "SUA_KEY";
     private static final String API_URL = "http://api.openweathermap.org/data/2.5/weather?q=Fortaleza&appid=1b06da5553773ccaab34a9ae6de794fe&units=metric";
 
     public static void main(String[] args) throws IOException {
