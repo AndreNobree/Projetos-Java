@@ -1,3 +1,5 @@
+package org.example;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,7 +10,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        String path = "C:\\Users\\andre.felipe\\Desktop\\Relatório csv.csv";
+        String path = "CAMINHO.csv";
 
 
         List<Product> list = new ArrayList<>();
