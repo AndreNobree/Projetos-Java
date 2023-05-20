@@ -8,9 +8,13 @@ import java.util.Scanner;
 * 5 - extrato bancário
 * */
 public class Main {
+    //static ConsultaSaldo chamaConsultaSaldo = new ConsultaSaldo();
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         OpcoesMenu chamaOpcoesMenu = new OpcoesMenu();
+        Funcoes chamaFuncoes = new Funcoes();
+
+
 
         while(true){
             chamaOpcoesMenu.menu();
@@ -18,10 +22,10 @@ public class Main {
             Integer respOpcao = entrada.nextInt();
 
             switch (respOpcao){
-                case 1 ->  System.out.print("OPÇÃO 1\n");
-                case 2 ->  System.out.print("OPÇÃO 2\n");
-                case 3 ->  System.out.print("OPÇÃO 3\n");
-                case 4 ->  System.out.print("OPÇÃO 4\n");
+                case 1 ->  chamaFuncoes.mostraSaldo();
+                case 2 ->  chamaFuncoes.fazDeposito(entrada);
+                case 3 ->  chamaFuncoes.sacarDinheiro(entrada);
+                case 4 ->  chamaFuncoes.mostraExtrato();
                 case 5 ->  System.out.print("SEÇÃO ENCERRADA\n");
                 default -> System.out.println("CODIGO INCORRETO");
             }
